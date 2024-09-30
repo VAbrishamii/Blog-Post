@@ -1,0 +1,29 @@
+.single-post{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5rem auto;
+}
+.single-post p{
+    width: 80%;
+    font-size: 1.5rem;
+}
+.single-post img{
+  aspect-ratio: 4/2;
+  border-radius: 10px;
+  width: 80%;
+  object-fit: cover;
+}
+.single-post i{
+    cursor: pointer;
+    font-size: 3rem;
+    color: var(--dark-blue);   
+
+}
+@media (max-width:425px) {
+    .single-post h1{
+     width: 80%;
+    }
+    
+}

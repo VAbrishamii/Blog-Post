@@ -1,0 +1,86 @@
+
+
+#edit-form{
+    margin: 2rem auto;
+    width: 80%;
+
+}
+form input{
+    width:100%;
+    padding: 0.75rem;
+    margin: 1rem auto;
+    border: 2px solid var(--black);
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); 
+    font-size: 1.5rem;
+    margin: 1rem;
+
+}
+form label{
+    align-self: flex-start;
+    font-size: 2rem;
+    margin: 10px;
+    
+}
+form textarea{
+    width: 100%;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border: 2px solid var(--black);
+    border-radius: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); 
+    font-size: 2rem;
+    height: 80vh;
+
+    /* Borrow from youtube */
+    scrollbar-width: thin; /* For Firefox */
+    scrollbar-color: transparent transparent; /* For Firefox */
+    -ms-overflow-style: none; /* For IE and Edge */
+    scrollbar-face-color: transparent; /* For IE and Edge */
+
+}
+.blue-btn {
+    width: 20%;
+    margin: 1rem;
+    padding:8px;
+    border-radius: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); 
+    cursor: pointer;
+    transition: box-shadow 0.3s; 
+    background-color: var(--white);
+    color: var(--dark-blue);
+    border: 2px solid var(--dark-blue);
+    font-size: 2rem;
+  
+  }
+
+@media (max-width:768px) {
+    form label{
+        font-size: 1.5rem;
+    }
+    form input{
+        font-size: 1.5rem ;
+    }
+    form textarea{
+        font-size: 1.5rem;
+    }
+    .blue-btn{
+        width: 40%;
+        font-size: 1.5rem;
+    }
+}
+@media (max-width:425px) {
+    form label{
+        font-size: 1.5rem;
+    }
+    form input{
+        font-size: 1rem ;
+    }
+    .blue-btn{
+        width: 45%;
+        font-size: 1rem;
+    }
+   
+
+    
+}
