@@ -63,7 +63,7 @@ container.appendChild(mainContent);
 
 
 function LoginPage() {
-  window.location.href = "../account/login.html";
+  window.location.href = "../../account/login.html";
 }
 
 const userName = localStorage.getItem('userName');
