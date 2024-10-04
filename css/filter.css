@@ -1,0 +1,43 @@
+#filter{
+    display: flex;
+   align-items: center;
+    width: 90%;
+    justify-content: space-evenly;
+    /* margin-left: 10rem; */
+    margin: 0 5rem;
+
+}
+.filter-container{
+    display: flex;
+    width: 80%;
+    justify-content: space-between; 
+ 
+
+   
+}
+.filter-icon{
+    font-size: 3rem;
+    color: var(--dark-blue);
+    padding: 2rem;
+    position: relative;
+    margin-top: 3rem;
+    cursor: pointer;
+   
+}
+.filter-dropdown{
+    position: absolute;
+    margin-top: 7rem;
+    margin-left: 0;
+
+}
+.filter-dropdown ul li{
+    font-size: 1.5rem;
+    padding: 3px;
+
+
+}
+@media (max-width:768px) {
+    #filter{
+        margin-left: 1.5rem;
+    }
+}

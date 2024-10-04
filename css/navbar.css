@@ -1,0 +1,67 @@
+.header{
+    background-color: var(--white);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+ 
+    
+}
+.logo{
+    width: 7.3vw;
+    margin: 2rem;
+    cursor: pointer;
+}
+.add-icon{
+    border: 3px solid var(--black);
+    border-radius: 50%;
+    padding: 8px;
+    font-size: 1.3rem;
+    cursor: pointer;
+}
+
+.icon{
+    font-size: 1.5rem;
+    display: flex;
+}
+.icon-item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon-item li{
+    margin: 0 15px;
+    cursor: pointer;
+}
+.hide{
+    display: none;
+}
+.add-icon{
+    font-size: 1.5rem;
+}
+#userDisplay{
+    border: 3px solid var(--dark-blue);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+@media (max-width: 768px) {
+    .logo{
+        width: 10vw;
+    }
+    .icon{
+        font-size: 1rem;
+    }
+    .icon-item li{
+        margin: 0 8px;
+    }
+    .add-icon{
+        font-size: 0.75rem;
+    }
+}
+

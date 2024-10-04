@@ -1,0 +1,142 @@
+.home-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    font-style: italic;
+    margin: 0 auto;
+    border-radius: 30px;
+}
+.carousel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 10px auto;
+    overflow: hidden;
+    width: 90%; 
+    height: 80%;
+    border-radius: 10px;
+   
+}
+
+
+.carousel-inner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+    animation: slide 10s infinite;
+}
+
+
+.carousel-item {
+    position: relative;
+    flex: 0 0 100%;
+    min-width: 100%;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+
+.carousel-item img {
+    width: 100%; 
+    height: 100%;
+    border-radius: 10px;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+    object-position: center;
+    /* opacity: 0.9; */
+    
+}
+.carousel-item-content{
+    position: absolute;
+    bottom: 40px;
+    left: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    color: white;
+    z-index: 1;
+    width: calc(100% - 40px); 
+}
+
+.carousel-item-content h3 {
+    margin: 0;
+    font-size: 3rem;
+    color: var(--white);
+}
+
+.carousel-item-content a {
+    margin-left: auto; 
+    display: inline-block;
+    padding: 5px 12px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: var(--white);
+    font-size: 2rem;
+    cursor: pointer;
+}
+/* .carousel-item-content a:hover{
+    color: var(--white);
+} */
+
+
+.carousel-btn {
+    /* position: absolute; */
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: var(--light-gray);
+    color: var(--black);
+    border: none;
+    padding: 20px;
+    cursor: pointer;
+    z-index: 1;
+    font-size: 1rem;
+    border-radius: 50%;
+    margin: 1rem;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.prev-btn {
+    left: 10px;
+}
+
+.next-btn {
+    right: 10px;
+}
+@media (max-width:768px) {
+    /* .carousel{
+        width: 100%;
+    } */
+    .carousel-btn{
+        position: absolute;
+        margin: 5px; 
+    }
+    .carousel-item-content h3{
+        font-size: 2rem;
+    }
+    .carousel-item-content a{
+        font-size: 1.5rem;
+    }
+}
+@media (max-width:425px) {
+    .carousel-item-content h3{
+        font-size: 1.3rem;
+    }
+    .carousel-item-content a{
+        font-size: 1rem;
+    }
+    
+}

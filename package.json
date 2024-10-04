@@ -1,0 +1,16 @@
+{
+  "name": "fed1-pe1-vabrishamii",
+  "version": "1.0.0",
+  "description": "Use this file to describe your project.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.19.2"
+  }
+}

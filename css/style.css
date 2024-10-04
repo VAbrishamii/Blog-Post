@@ -1,0 +1,59 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@800&family=Inter:wght@100..900&family=Italiana&family=Jura:wght@400;600&family=Poppins:wght@400;500;600;800;900&display=swap');
+
+:root {
+    --dark-blue:rgba(35, 65, 223, 1);
+    --light-gray:rgba(228, 230, 239, 1);
+    --black:rgba(0, 0, 0, 1);
+    --white:rgba(255, 255, 255, 1);
+}
+body {
+  margin: 0;
+  padding: 0 0;
+  outline: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  border: none;
+  overflow-x: hidden;
+  width: 100vw;
+}
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+li {
+list-style: none;
+}
+a{
+  color: var(--black);
+}
+
+.logo{
+  width: 7.3vw;
+  margin: 2rem;
+}
+.btn{
+  background-color: var(--black);
+  color: var(--white);
+  border-radius: 30px;
+  padding: 10px;
+  font-size: 1.2rem;
+  cursor: pointer;
+ 
+}
+.hidden{
+  display: none;
+}
+
+.btn:hover{
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4); 
+  transition: box-shadow 0.3s; 
+}
+
+
+@media (max-width: 768px) {
+  .btn{
+    width: 20px;
+  }
+}
